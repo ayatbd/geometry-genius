@@ -40,15 +40,15 @@
                             <img src="images/triangle.png" alt="">
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Triangle</h2>
+                          <h2 class="card-title" id="triangle-area-name">Triangle</h2>
                           <p>Area (A) = 0.5 * b * h</p>
                           <div class="grid grid-cols-2 px-4 mt-2 mb-6">
                             <div class="flex justify-between">
-                                <input class="w-3/5" type="text" name="" id="input-b" placeholder="b">
-                                <span class="w-2/5" >cm</span>
+                                <input class="w-3/5 pl-1" type="text" name="" id="trianle-input-b" placeholder="b">
+                                <span class="w-2/5" id="centimeter">cm</span>
                             </div>
                             <div class="flex justify-between">
-                                <input class="w-3/5" type="text" name="" id="input-h" placeholder="h">
+                                <input class="w-3/5 pl-1" type="text" name="" id="trianle-input-h" placeholder="h">
                                 <span class="w-2/5" >cm</span>
                             </div>
                           </div>
@@ -63,20 +63,20 @@
                             <img src="images/rectangle.png" alt="">
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Rectangle</h2>
+                          <h2 class="card-title" id="rectangle-area-name">Rectangle</h2>
                           <p>Area (A) = w * l</p>
                           <div class="grid grid-cols-2 px-4 mt-2 mb-6">
                             <div class="flex justify-between">
-                                <input class="w-3/5" type="text" name="" id="">
+                                <input class="w-3/5 pl-1" type="text" name="" id="rectangle-input-w" placeholder="w">
                                 <span class="w-2/5" >cm</span>
                             </div>
                             <div class="flex justify-between">
-                                <input class="w-3/5" type="text" name="" id="">
+                                <input class="w-3/5 pl-1" type="text" name="" id="rectangle-input-l" placeholder="l">
                                 <span class="w-2/5" >cm</span>
                             </div>
                           </div>
                           <div class="card-actions">
-                            <button class="btn btn-primary px-20">Calculate</button>
+                            <button class="btn btn-primary px-20" id="rectangle">Calculate</button>
                           </div>
                         </div>
                     </div>
@@ -86,11 +86,20 @@
                             <img src="images/parallelogram.png" alt="">
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Parallelogram</h2>
+                          <h2 class="card-title" id="parallelogram-area-name">Parallelogram</h2>
                           <p>Area (A) = b * h</p>
-                          <p>b=10cm, h=12cm</p>
+                          <div class="grid grid-cols-2 px-4 mt-2 mb-6">
+                            <div class="flex justify-between">
+                                <input class="w-3/5 pl-1" type="text" name="" id="Parallelogram-input-b" placeholder="b">
+                                <span class="w-2/5" >cm</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <input class="w-3/5 pl-1" type="text" name="" id="Parallelogram-input-h" placeholder="h">
+                                <span class="w-2/5" >cm</span>
+                            </div>
+                          </div>
                           <div class="card-actions">
-                            <button class="btn btn-primary px-20">Calculate</button>
+                            <button class="btn btn-primary px-20" id="Parallelogram-btn">Calculate</button>
                           </div>
                         </div>
                     </div>
@@ -100,28 +109,43 @@
                             <img src="images/rhombus.png" alt="">
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Rhombus</h2>
+                          <h2 class="card-title" id="rhombus-area-name">Rhombus</h2>
                           <p>Area (A) = 0.5 * d<sup>1</sup> * d<sup>2</sup></p>
-                          <p>
-                            <span>d<sup>1</sup> = 16cm</span>
-                            <span>d<sup>2</sup> = 8cm</span>
-                          </p>
+                          <div class="grid grid-cols-2 px-4 mt-2 mb-6">
+                            <div class="flex justify-between">
+                                <input class="w-3/5 pl-1" type="text" name="" id="Rhombus-input-w" placeholder="w">
+                                <span class="w-2/5" >cm</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <input class="w-3/5 pl-1" type="text" name="" id="Rhombus-input-l" placeholder="l">
+                                <span class="w-2/5" >cm</span>
+                            </div>
+                          </div>
                           <div class="card-actions">
-                            <button class="btn btn-primary px-20">Calculate</button>
+                            <button class="btn btn-primary px-20" id="Rhombus-btn">Calculate</button>
                           </div>
                         </div>
                     </div>
-                    <!-- portfolio no.5  Rhombus -->
+                    <!-- portfolio no.5  Pentagon -->
                     <div class="card bg-red-200 shadow-xl format rounded-md">
                         <figure class="px-10 pt-10">
                             <img src="images/pentagon.png" alt="">
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Pentagon</h2>
+                          <h2 class="card-title" id="pentagon-area-name">Pentagon</h2>
                           <p>Area (A) = 0.5 * p * b</p>
-                          <p>p=10cm, b=12cm</p>
+                          <div class="grid grid-cols-2 px-4 mt-2 mb-6">
+                            <div class="flex justify-between">
+                                <input class="w-3/5 pl-1" type="text" name="" id="Pentagon-input-p" placeholder="p">
+                                <span class="w-2/5" >cm</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <input class="w-3/5 pl-1" type="text" name="" id="Pentagon-input-b" placeholder="b">
+                                <span class="w-2/5" >cm</span>
+                            </div>
+                          </div>
                           <div class="card-actions">
-                            <button class="btn btn-primary px-20">Calculate</button>
+                            <button class="btn btn-primary px-20" id="Pentagon-btn">Calculate</button>
                           </div>
                         </div>
                     </div>
@@ -131,11 +155,20 @@
                             <img src="images/ellipse.png" alt="">
                         </figure>
                         <div class="card-body items-center text-center">
-                          <h2 class="card-title">Ellipse</h2>
+                          <h2 class="card-title" id="ellipse-area-name">Ellipse</h2>
                           <p>Area (A) = π ab</p>
-                          <p>a = 10cm, b = 4cm</p>
+                          <div class="grid grid-cols-2 px-4 mt-2 mb-6">
+                            <div class="flex justify-between">
+                                <input class="w-3/5 pl-1" type="text" name="" id="ellipse-input-a" placeholder="a">
+                                <span class="w-2/5" >cm</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <input class="w-3/5 pl-1" type="text" name="" id="ellipse-input-b" placeholder="b">
+                                <span class="w-2/5" >cm</span>
+                            </div>
+                          </div>
                           <div class="card-actions">
-                            <button class="btn btn-primary px-20">Calculate</button>
+                            <button class="btn btn-primary px-20" id="ellipse-btn">Calculate</button>
                           </div>
                         </div>
                     </div>
@@ -156,6 +189,7 @@
     <footer></footer>
 
     <script src="js/tailwind.config.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/index.js"></script>
 </body>
 </html>

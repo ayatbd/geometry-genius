@@ -1,24 +1,89 @@
 let count = 0;
-document.getElementById('triangle-button').addEventListener('click', function(){
-    const firstInput = document.getElementById('input-b').value;
-    const firstInputNumber = parseFloat(firstInput);
 
-    const secondInput = document.getElementById('input-h').value;
-    const secondInputNumber = parseFloat(secondInput);
+// triangle area calculation
+document
+  .getElementById("triangle-button")
+  .addEventListener("click", function () {
+    // get value of input fields by function 2
+    const firstInputNumber = getFirstInputValueById("trianle-input-b");
+    const secondInputNumber = getSecondInputValueById("trianle-input-h");
 
     const tringleArea = 0.5 * firstInputNumber * secondInputNumber;
 
-    // listing the area of calculated values 
-    count++
-    const containerTable = document.getElementById('container-table');
+    const triangleShape = document.getElementById("triangle-area-name").innerText;
 
-    const tr = document.createElement('tr');
-    tr.innerHTML =`
-    <td>${count}</td>
-    <td>${tringleArea}</td>
-    <td>${tringleArea}</td>
-    <td>${firstInput}</td>
-    `;
-    containerTable.appendChild(tr);
+    listingValues(triangleShape, tringleArea);
+  });
 
-})
+// rectangle area calculate
+document.getElementById("rectangle").addEventListener("click", function () {
+  // get value of input fields by function 2
+  const firstInputNumber = getFirstInputValueById("rectangle-input-w");
+  const secondInputNumber = getSecondInputValueById("rectangle-input-l");
+
+  const rectnagleArea = firstInputNumber * secondInputNumber;
+
+  const rectangleShape = document.getElementById("rectangle-area-name").innerText;
+
+  listingValues(rectangleShape, rectnagleArea);
+});
+
+// Parallelogram area calculate
+document
+  .getElementById("Parallelogram-btn")
+  .addEventListener("click", function () {
+    // get value of input fields by function 2
+    const firstInputNumber = getFirstInputValueById("Parallelogram-input-b");
+    const secondInputNumber = getSecondInputValueById("Parallelogram-input-h");
+
+    const ParallelogramArea = firstInputNumber * secondInputNumber;
+    const ParallelogramShape = document.getElementById("parallelogram-area-name").innerText;
+
+    // get list items by function no.1
+    listingValues(ParallelogramShape, ParallelogramArea);
+  });
+
+// rhombus area calculate
+document
+  .getElementById("Rhombus-btn")
+  .addEventListener("click", function () {
+    // get value of input fields by function 2
+    const firstInputNumber = getFirstInputValueById("Rhombus-input-w");
+    const secondInputNumber = getSecondInputValueById("Rhombus-input-l");
+
+    const RhombusArea = 0.5 * firstInputNumber * secondInputNumber;
+    const RhombusShape = document.getElementById("rhombus-area-name").innerText;
+
+    // get list items by function no.1
+    listingValues(RhombusShape, RhombusArea);
+  });
+
+// Pentagon area calculate
+document
+  .getElementById("Pentagon-btn")
+  .addEventListener("click", function () {
+    // get value of input fields by function 2
+    const firstInputNumber = getFirstInputValueById("Pentagon-input-p");
+    const secondInputNumber = getSecondInputValueById("Pentagon-input-b");
+
+    const RhombusArea = 0.5 * firstInputNumber * secondInputNumber;
+    const RhombusShape = document.getElementById("pentagon-area-name").innerText;
+
+    // get list items by function no.1
+    listingValues(RhombusShape, RhombusArea);
+  });
+
+// Pentagon area calculate
+document
+  .getElementById("ellipse-btn")
+  .addEventListener("click", function () {
+    // get value of input fields by function 2
+    const firstInputNumber = getFirstInputValueById("ellipse-input-a");
+    const secondInputNumber = getSecondInputValueById("ellipse-input-b");
+
+    const RhombusArea = 3.14 * firstInputNumber * secondInputNumber;
+    const RhombusShape = document.getElementById("ellipse-area-name").innerText;
+
+    // get list items by function no.1
+    listingValues(RhombusShape, RhombusArea);
+  });
