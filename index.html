@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment prokriar somahar 5</title>
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- style css  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- responsive css  -->
+    <link rel="stylesheet" href="responsive.css">
+    <!-- daisy tailwind cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <!-- header  -->
+    <header>
+        <div>
+            <div class="navbar bg-green-100">
+                <div class="navbar-start">
+                  <a class="btn btn-ghost normal-case text-2xl">Interactive</a>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn">Blog</a>
+                </div>
+              </div>
+        </div>
+    </header>
+    <!-- main section  -->
+        <!-- area portfolios section  -->
+        <section class="my-12 flex justify-between gap-4">
+            <div class="w-3/4">
+                
+                <div class="grid grid-cols-3 gap-4">
+                    <!-- portfolio no. 1 Triangle -->
+                    <div class="card bg-red-200 shadow-xl format rounded-md border-solid border-2">
+                        <figure class="px-10 pt-10">
+                            <img src="images/triangle.png" alt="">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Triangle</h2>
+                          <p>Area (A) = 0.5 * b * h</p>
+                          <div class="grid grid-cols-2 px-4 mt-2 mb-6">
+                            <div class="flex justify-between">
+                                <input class="w-3/5" type="text" name="" id="input-b" placeholder="b">
+                                <span class="w-2/5" >cm</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <input class="w-3/5" type="text" name="" id="input-h" placeholder="h">
+                                <span class="w-2/5" >cm</span>
+                            </div>
+                          </div>
+                          <div class="card-actions">
+                            <button id="triangle-button" class="btn btn-primary px-20">Calculate</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- portfolio no. 2 rectangle -->
+                    <div class="card bg-red-200 shadow-xl format rounded-md">
+                        <figure class="px-10 pt-10">
+                            <img src="images/rectangle.png" alt="">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Rectangle</h2>
+                          <p>Area (A) = w * l</p>
+                          <div class="grid grid-cols-2 px-4 mt-2 mb-6">
+                            <div class="flex justify-between">
+                                <input class="w-3/5" type="text" name="" id="">
+                                <span class="w-2/5" >cm</span>
+                            </div>
+                            <div class="flex justify-between">
+                                <input class="w-3/5" type="text" name="" id="">
+                                <span class="w-2/5" >cm</span>
+                            </div>
+                          </div>
+                          <div class="card-actions">
+                            <button class="btn btn-primary px-20">Calculate</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- portfolio no. 3 Parallelogram -->
+                    <div class="card bg-red-200 shadow-xl format rounded-md">
+                        <figure class="px-10 pt-10">
+                            <img src="images/parallelogram.png" alt="">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Parallelogram</h2>
+                          <p>Area (A) = b * h</p>
+                          <p>b=10cm, h=12cm</p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary px-20">Calculate</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- portfolio no.4  Rhombus -->
+                    <div class="card bg-red-200 shadow-xl format rounded-md">
+                        <figure class="px-10 pt-10">
+                            <img src="images/rhombus.png" alt="">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Rhombus</h2>
+                          <p>Area (A) = 0.5 * d<sup>1</sup> * d<sup>2</sup></p>
+                          <p>
+                            <span>d<sup>1</sup> = 16cm</span>
+                            <span>d<sup>2</sup> = 8cm</span>
+                          </p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary px-20">Calculate</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- portfolio no.5  Rhombus -->
+                    <div class="card bg-red-200 shadow-xl format rounded-md">
+                        <figure class="px-10 pt-10">
+                            <img src="images/pentagon.png" alt="">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Pentagon</h2>
+                          <p>Area (A) = 0.5 * p * b</p>
+                          <p>p=10cm, b=12cm</p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary px-20">Calculate</button>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- portfolio no.6  ellipse -->
+                    <div class="card bg-red-200 shadow-xl format rounded-md">
+                        <figure class="px-10 pt-10">
+                            <img src="images/ellipse.png" alt="">
+                        </figure>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title">Ellipse</h2>
+                          <p>Area (A) = π ab</p>
+                          <p>a = 10cm, b = 4cm</p>
+                          <div class="card-actions">
+                            <button class="btn btn-primary px-20">Calculate</button>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="h-96 border-solid border-2 rounded-md w-1/4">
+                <h5 class="text-center mt-6">Area Calculation</h5>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+
+    <script src="js/tailwind.config.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
