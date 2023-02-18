@@ -108,3 +108,13 @@ document
 document.getElementById('blog-btn').addEventListener('click', function(){
     window.location.href ='blog.html';
 })
+
+// call random color chadnging function
+
+getIdForBgColor('portfolio-triangle');
+getIdForBgColor('rectangle-triangle');
+getIdForBgColor('Parallelogram-triangle');
+getIdForBgColor('Rhombus-triangle');
+getIdForBgColor('Pentagon-triangle');
+getIdForBgColor('ellipse-triangle');
+getIdForBgColor('portfolio-triangle');
