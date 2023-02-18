@@ -103,3 +103,8 @@ document
     // get list items by function no.1
     listingValues(RhombusShape, RhombusArea);
   });
+
+//   blog btn directory added file 
+document.getElementById('blog-btn').addEventListener('click', function(){
+    window.location.href ='blog.html';
+})

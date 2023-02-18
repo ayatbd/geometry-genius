@@ -18,7 +18,7 @@
       type="text/css"
     />
   </head>
-  <body>
+  <body class="flex justify-center flex-col items-center">
     <!-- header  -->
     <header class="container">
       <div>
@@ -27,7 +27,7 @@
             <a class="btn btn-ghost normal-case text-2xl">Interactive</a>
           </div>
           <div class="navbar-end">
-            <a class="btn">Blog</a>
+            <a class="btn px-9" id="blog-btn">Blog</a>
           </div>
         </div>
       </div>
@@ -35,9 +35,9 @@
     <!-- main section  -->
     <main class="container mx-auto">
       <!-- area portfolios section  -->
-      <section class="my-12 flex justify-between gap-4">
-        <div class="w-3/4">
-          <div class="grid grid-cols-3 gap-4">
+      <section class="my-12 flex md:flex-row flex-col md:justify-between justify-center gap-4">
+        <div class="md:w-3/4">
+          <div class="grid md:grid-cols-3 gap-4 justify-center">
             <!-- portfolio no. 1 Triangle -->
             <div id="portfolio-triangle"
               class="portfolio card bg-red-200 shadow-xl format rounded-md border-solid border-2"
@@ -268,7 +268,7 @@
             </div>
           </div>
         </div>
-        <div class="h-96 border-solid border-2 rounded-md w-1/4">
+        <div class="md:h-96 w-full h-96 border-solid border-2 rounded-md md:w-1/4">
           <h5 class="text-center mt-6 mb-3 underline underline-offset-8 text-2xl">Area Calculation</h5>
           <table class="mr-2">
             <thead></thead>
