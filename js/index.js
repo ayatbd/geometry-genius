@@ -8,7 +8,15 @@ document
     const firstInputNumber = getFirstInputValueById("trianle-input-b");
     const secondInputNumber = getSecondInputValueById("trianle-input-h");
 
-    const tringleArea = 0.5 * firstInputNumber * secondInputNumber;
+    const alert = document.getElementById('alert');
+    if(isNaN(firstInputNumber) || isNaN(secondInputNumber)){
+        alert.style.display = 'block';
+    }
+    else{
+        alert.style.display = 'none';
+    }
+
+    const tringleArea = 0.5 * firstInputNumber * secondInputNumber + 'cm<sup>2</sup>';
 
     const triangleShape = document.getElementById("triangle-area-name").innerText;
 
@@ -21,7 +29,15 @@ document.getElementById("rectangle").addEventListener("click", function () {
   const firstInputNumber = getFirstInputValueById("rectangle-input-w");
   const secondInputNumber = getSecondInputValueById("rectangle-input-l");
 
-  const rectnagleArea = firstInputNumber * secondInputNumber;
+  const alert = document.getElementById('rectangle-alert');
+    if(isNaN(firstInputNumber) || isNaN(secondInputNumber)){
+        alert.style.display = 'block';
+    }
+    else{
+        alert.style.display = 'none';
+    }
+
+  const rectnagleArea = firstInputNumber * secondInputNumber + 'cm<sup>2</sup>';
 
   const rectangleShape = document.getElementById("rectangle-area-name").innerText;
 

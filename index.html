@@ -1,195 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>assignment prokriar somahar 5</title>
     <!-- tailwind cdn  -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- style css  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <!-- responsive css  -->
-    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="responsive.css" />
     <!-- daisy tailwind cdn  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
     <!-- header  -->
-    <header>
-        <div>
-            <div class="navbar bg-green-100">
-                <div class="navbar-start">
-                  <a class="btn btn-ghost normal-case text-2xl">Interactive</a>
-                </div>
-                <div class="navbar-end">
-                  <a class="btn">Blog</a>
-                </div>
-              </div>
+    <header class="container">
+      <div>
+        <div class="navbar bg-green-100">
+          <div class="navbar-start">
+            <a class="btn btn-ghost normal-case text-2xl">Interactive</a>
+          </div>
+          <div class="navbar-end">
+            <a class="btn">Blog</a>
+          </div>
         </div>
+      </div>
     </header>
     <!-- main section  -->
-        <!-- area portfolios section  -->
-        <section class="my-12 flex justify-between gap-4">
-            <div class="w-3/4">
-                
-                <div class="grid grid-cols-3 gap-4">
-                    <!-- portfolio no. 1 Triangle -->
-                    <div class="card bg-red-200 shadow-xl format rounded-md border-solid border-2">
-                        <figure class="px-10 pt-10">
-                            <img src="images/triangle.png" alt="">
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title" id="triangle-area-name">Triangle</h2>
-                          <p>Area (A) = 0.5 * b * h</p>
-                          <div class="grid grid-cols-2 px-4 mt-2 mb-6">
-                            <div class="flex justify-between">
-                                <input class="w-3/5 pl-1" type="text" name="" id="trianle-input-b" placeholder="b">
-                                <span class="w-2/5" id="centimeter">cm</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <input class="w-3/5 pl-1" type="text" name="" id="trianle-input-h" placeholder="h">
-                                <span class="w-2/5" >cm</span>
-                            </div>
-                          </div>
-                          <div class="card-actions">
-                            <button id="triangle-button" class="btn btn-primary px-20">Calculate</button>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- portfolio no. 2 rectangle -->
-                    <div class="card bg-red-200 shadow-xl format rounded-md">
-                        <figure class="px-10 pt-10">
-                            <img src="images/rectangle.png" alt="">
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title" id="rectangle-area-name">Rectangle</h2>
-                          <p>Area (A) = w * l</p>
-                          <div class="grid grid-cols-2 px-4 mt-2 mb-6">
-                            <div class="flex justify-between">
-                                <input class="w-3/5 pl-1" type="text" name="" id="rectangle-input-w" placeholder="w">
-                                <span class="w-2/5" >cm</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <input class="w-3/5 pl-1" type="text" name="" id="rectangle-input-l" placeholder="l">
-                                <span class="w-2/5" >cm</span>
-                            </div>
-                          </div>
-                          <div class="card-actions">
-                            <button class="btn btn-primary px-20" id="rectangle">Calculate</button>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- portfolio no. 3 Parallelogram -->
-                    <div class="card bg-red-200 shadow-xl format rounded-md">
-                        <figure class="px-10 pt-10">
-                            <img src="images/parallelogram.png" alt="">
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title" id="parallelogram-area-name">Parallelogram</h2>
-                          <p>Area (A) = b * h</p>
-                          <div class="grid grid-cols-2 px-4 mt-2 mb-6">
-                            <div class="flex justify-between">
-                                <input class="w-3/5 pl-1" type="text" name="" id="Parallelogram-input-b" placeholder="b">
-                                <span class="w-2/5" >cm</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <input class="w-3/5 pl-1" type="text" name="" id="Parallelogram-input-h" placeholder="h">
-                                <span class="w-2/5" >cm</span>
-                            </div>
-                          </div>
-                          <div class="card-actions">
-                            <button class="btn btn-primary px-20" id="Parallelogram-btn">Calculate</button>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- portfolio no.4  Rhombus -->
-                    <div class="card bg-red-200 shadow-xl format rounded-md">
-                        <figure class="px-10 pt-10">
-                            <img src="images/rhombus.png" alt="">
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title" id="rhombus-area-name">Rhombus</h2>
-                          <p>Area (A) = 0.5 * d<sup>1</sup> * d<sup>2</sup></p>
-                          <div class="grid grid-cols-2 px-4 mt-2 mb-6">
-                            <div class="flex justify-between">
-                                <input class="w-3/5 pl-1" type="text" name="" id="Rhombus-input-w" placeholder="w">
-                                <span class="w-2/5" >cm</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <input class="w-3/5 pl-1" type="text" name="" id="Rhombus-input-l" placeholder="l">
-                                <span class="w-2/5" >cm</span>
-                            </div>
-                          </div>
-                          <div class="card-actions">
-                            <button class="btn btn-primary px-20" id="Rhombus-btn">Calculate</button>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- portfolio no.5  Pentagon -->
-                    <div class="card bg-red-200 shadow-xl format rounded-md">
-                        <figure class="px-10 pt-10">
-                            <img src="images/pentagon.png" alt="">
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title" id="pentagon-area-name">Pentagon</h2>
-                          <p>Area (A) = 0.5 * p * b</p>
-                          <div class="grid grid-cols-2 px-4 mt-2 mb-6">
-                            <div class="flex justify-between">
-                                <input class="w-3/5 pl-1" type="text" name="" id="Pentagon-input-p" placeholder="p">
-                                <span class="w-2/5" >cm</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <input class="w-3/5 pl-1" type="text" name="" id="Pentagon-input-b" placeholder="b">
-                                <span class="w-2/5" >cm</span>
-                            </div>
-                          </div>
-                          <div class="card-actions">
-                            <button class="btn btn-primary px-20" id="Pentagon-btn">Calculate</button>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- portfolio no.6  ellipse -->
-                    <div class="card bg-red-200 shadow-xl format rounded-md">
-                        <figure class="px-10 pt-10">
-                            <img src="images/ellipse.png" alt="">
-                        </figure>
-                        <div class="card-body items-center text-center">
-                          <h2 class="card-title" id="ellipse-area-name">Ellipse</h2>
-                          <p>Area (A) = π ab</p>
-                          <div class="grid grid-cols-2 px-4 mt-2 mb-6">
-                            <div class="flex justify-between">
-                                <input class="w-3/5 pl-1" type="text" name="" id="ellipse-input-a" placeholder="a">
-                                <span class="w-2/5" >cm</span>
-                            </div>
-                            <div class="flex justify-between">
-                                <input class="w-3/5 pl-1" type="text" name="" id="ellipse-input-b" placeholder="b">
-                                <span class="w-2/5" >cm</span>
-                            </div>
-                          </div>
-                          <div class="card-actions">
-                            <button class="btn btn-primary px-20" id="ellipse-btn">Calculate</button>
-                          </div>
-                        </div>
-                    </div>
+    <main class="container mx-auto">
+      <!-- area portfolios section  -->
+      <section class="my-12 flex justify-between gap-4">
+        <div class="w-3/4">
+          <div class="grid grid-cols-3 gap-4">
+            <!-- portfolio no. 1 Triangle -->
+            <div
+              class="card bg-red-200 shadow-xl format rounded-md border-solid border-2"
+            >
+              <figure class="px-10 pt-10">
+                <img src="images/triangle.png" alt="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title" id="triangle-area-name">Triangle</h2>
+                <p>Area (A) = 0.5 * b * h</p>
+                <div class="grid grid-cols-2 px-4 mt-2 mb-6">
+                  <div class="flex justify-between">
+                    <input
+                      class="w-3/5 pl-1"
+                      type="text"
+                      name=""
+                      id="trianle-input-b"
+                      placeholder="b"
+                    />
+                    <span class="w-2/5" id="centimeter">cm</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <input
+                      class="w-3/5 pl-1"
+                      type="text"
+                      name=""
+                      id="trianle-input-h"
+                      placeholder="h"
+                    />
+                    <span class="w-2/5">cm</span>
+                  </div>
                 </div>
+                <div class="card-actions">
+                  <button id="triangle-button" class="btn btn-primary px-20">
+                    Calculate
+                  </button>
+                  <p class="hidden text-red-700" id="alert">Please input only number</p>
+                </div>
+              </div>
             </div>
-            <div class="h-96 border-solid border-2 rounded-md w-1/4">
-                <h5 class="text-center mt-6">Area Calculation</h5>
-                <table class="table w-full">
-                  <thead></thead>
-                  <tbody id="container-table">
-
-                  </tbody>
-                </table>
-
+            <!-- portfolio no. 2 rectangle -->
+            <div class="card bg-red-200 shadow-xl format rounded-md">
+              <figure class="px-10 pt-10">
+                <img src="images/rectangle.png" alt="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title" id="rectangle-area-name">Rectangle</h2>
+                <p>Area (A) = w * l</p>
+                <div class="grid grid-cols-2 px-4 mt-2 mb-6">
+                  <div class="flex justify-between">
+                    <input
+                      class="w-3/5 pl-1"
+                      type="text"
+                      name=""
+                      id="rectangle-input-w"
+                      placeholder="w"
+                    />
+                    <span class="w-2/5">cm</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <input
+                      class="w-3/5 pl-1"
+                      type="text"
+                      name=""
+                      id="rectangle-input-l"
+                      placeholder="l"
+                    />
+                    <span class="w-2/5">cm</span>
+                  </div>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-primary px-20" id="rectangle">
+                    Calculate
+                  </button>
+                  <p class="hidden text-red-700" id="rectangle-alert">Please input only number</p>
+                </div>
+              </div>
             </div>
-        </section>
+            <!-- portfolio no. 3 Parallelogram -->
+            <div class="card bg-red-200 shadow-xl format rounded-md">
+              <figure class="px-10 pt-10">
+                <img src="images/parallelogram.png" alt="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title" id="parallelogram-area-name">
+                  Parallelogram
+                </h2>
+                <p>Area (A) = b * h</p>
+                <div class="grid grid-cols-2 px-4 mt-2 mb-6">
+                  <div class="flex justify-between">
+                    <input
+                      class="w-3/5 pl-1"
+                      type="text"
+                      name=""
+                      id="Parallelogram-input-b"
+                      placeholder="b"
+                    />
+                    <span class="w-2/5">cm</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <input
+                      class="w-3/5 pl-1"
+                      type="text"
+                      name=""
+                      id="Parallelogram-input-h"
+                      placeholder="h"
+                    />
+                    <span class="w-2/5">cm</span>
+                  </div>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-primary px-20" id="Parallelogram-btn">
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio no.4  Rhombus -->
+            <div class="card bg-red-200 shadow-xl format rounded-md">
+              <figure class="px-10 pt-10">
+                <img src="images/rhombus.png" alt="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title" id="rhombus-area-name">Rhombus</h2>
+                <p>Area (A) = 0.5 * d<sup>1</sup> * d<sup>2</sup></p>
+                <div class="grid grid-cols-2 px-4 mt-2 mb-6">
+                  <div class="flex justify-between">
+                    <input
+                      class="w-3/5 pl-1"
+                      type="text"
+                      name=""
+                      id="Rhombus-input-w"
+                      placeholder="w"
+                    />
+                    <span class="w-2/5">cm</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <input
+                      class="w-3/5 pl-1"
+                      type="text"
+                      name=""
+                      id="Rhombus-input-l"
+                      placeholder="l"
+                    />
+                    <span class="w-2/5">cm</span>
+                  </div>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-primary px-20" id="Rhombus-btn">
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio no.5  Pentagon -->
+            <div class="card bg-red-200 shadow-xl format rounded-md">
+              <figure class="px-10 pt-10">
+                <img src="images/pentagon.png" alt="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title" id="pentagon-area-name">Pentagon</h2>
+                <p>Area (A) = 0.5 * p * b</p>
+                <div class="grid grid-cols-2 px-4 mt-2 mb-6">
+                  <div class="flex justify-between">
+                    <input
+                      class="w-3/5 pl-1"
+                      type="text"
+                      name=""
+                      id="Pentagon-input-p"
+                      placeholder="p"
+                    />
+                    <span class="w-2/5">cm</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <input
+                      class="w-3/5 pl-1"
+                      type="text"
+                      name=""
+                      id="Pentagon-input-b"
+                      placeholder="b"
+                    />
+                    <span class="w-2/5">cm</span>
+                  </div>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-primary px-20" id="Pentagon-btn">
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- portfolio no.6  ellipse -->
+            <div class="card bg-red-200 shadow-xl format rounded-md">
+              <figure class="px-10 pt-10">
+                <img src="images/ellipse.png" alt="" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title" id="ellipse-area-name">Ellipse</h2>
+                <p>Area (A) = π ab</p>
+                <div class="grid grid-cols-2 px-4 mt-2 mb-6">
+                  <div class="flex justify-between">
+                    <input
+                      class="w-3/5 pl-1"
+                      type="text"
+                      name=""
+                      id="ellipse-input-a"
+                      placeholder="a"
+                    />
+                    <span class="w-2/5">cm</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <input
+                      class="w-3/5 pl-1"
+                      type="text"
+                      name=""
+                      id="ellipse-input-b"
+                      placeholder="b"
+                    />
+                    <span class="w-2/5">cm</span>
+                  </div>
+                </div>
+                <div class="card-actions">
+                  <button class="btn btn-primary px-20" id="ellipse-btn">
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="h-96 border-solid border-2 rounded-md w-1/4">
+          <h5 class="text-center mt-6">Area Calculation</h5>
+          <table class="table">
+            <thead></thead>
+            <tbody id="container-table"></tbody>
+          </table>
+        </div>
+      </section>
     </main>
     <footer></footer>
 
     <script src="js/tailwind.config.js"></script>
     <script src="js/common.js"></script>
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>

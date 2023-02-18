@@ -10,7 +10,7 @@ function listingValues(ShapeName, shapeQuantity) {
     <td>${count}</td>
     <td>${ShapeName}</td>
     <td>${shapeQuantity}</td>
-    <td><button class="bg-sky-400 p-2 rounded">convert to m<sub>2</sub></button></td>
+    <td><button class="bg-sky-400 p-1 rounded">convert to m<sub>2</sub></button></td>
     `;
   containerTable.appendChild(tr);
 }
