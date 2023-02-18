@@ -7,9 +7,9 @@ function listingValues(ShapeName, shapeQuantity) {
   const containerTable = document.getElementById("container-table");
   const tr = document.createElement("tr");
   tr.innerHTML = `
-    <td>${count}</td>
-    <td>${ShapeName}</td>
-    <td>${shapeQuantity}</td>
+    <td class="p-2">${count}</td>
+    <td class="p-2">${ShapeName}</td>
+    <td class="p-2">${shapeQuantity}</td>
     <td><button class="bg-sky-400 p-1 rounded">convert to m<sub>2</sub></button></td>
     `;
   containerTable.appendChild(tr);
