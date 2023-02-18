@@ -26,3 +26,22 @@ function getSecondInputValueById(secondInputId) {
   const secondInputNumber = parseFloat(secondInput);
   return secondInputNumber;
 }
+
+    function getIdForBgColor(portfolioName){
+    const colors = ['#537FE7', '#060047', '#C92C6D', '#645CBB', '#567189', '#13005A'];
+
+    const portfolio = document.querySelector('portfolioName');
+    
+    function setRandomBackground() {
+      const randomColor = colors[Math.floor(Math.random() * colors.length)];
+      portfolio.style.backgroundColor = randomColor;
+    }
+    
+    setRandomBackground(); // set initial random background color
+    
+    portfolio.addEventListener('mouseenter', setRandomBackground); // change background on hover
+    }
+
+    
+
+
