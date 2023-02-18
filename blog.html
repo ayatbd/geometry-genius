@@ -1,18 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        h3{
-            color: lightcoral;
-            text-align: center;
-        }
+      h3 {
+        color: lightcoral;
+        text-align: center;
+      }
     </style>
-</head>
-<body>
-    <h3>Here are some blogs</h3>
-</body>
+  </head>
+  <body class="container">
+    <h3 class="text-3xl mb-10">Here are some blogs</h3>
+    <div class="px-60 space-y-8 mb-7">
+      <div class="space-y-4">
+        <h5>Q.1: What is the dom and what is the purpose of dom?</h5>
+        <p>
+            The Document Object Model is a cross-platform and language-independent interface that treats an XML or HTML document as a tree structure wherein each node is an object representing a part of the document. The DOM represents a document with a logical tree.
+        </p>
+      </div>
+      <div class="space-y-4">
+        <h5>Q.2: How can be selected an element by dom?</h5>
+        <p>
+            There are five ways to select an element by dom <br>
+            getElementsByTagName() <br>
+            getElementsByClassName() <br>
+            getElementById() <br>
+            querySelector() <br>
+            querySelectorAll() 
+        </p>
+      </div>
+      <div class="space-y-4">
+        <h5>Q.3: What is event bubble?</h5>
+        <p>
+            Event bubbling is a type of DOM event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors of the target element in the same nesting hierarchy till it reaches the outermost DOM element or document object. 
+        </p>
+      </div>
+      <div class="space-y-4">
+        <h5>Q.4: What is call back function and what is the work of it?</h5>
+        <p>
+            In computer programming, a callback or callback function is any reference to executable code that is passed as an argument to another piece of code; that code is expected to call back the callback function as part of its job. 
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
